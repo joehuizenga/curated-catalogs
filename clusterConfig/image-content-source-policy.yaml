@@ -1,0 +1,12 @@
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  name: ibm-cp-common-services
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - quay.io/huizenga/cs/cpopen
+    source: icr.io/cpopen
+  - mirrors:
+    - quay.io/huizenga/cs/opencloudio
+    source: quay.io/opencloudio
