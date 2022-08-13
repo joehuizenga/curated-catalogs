@@ -5,8 +5,8 @@ metadata:
 spec:
   repositoryDigestMirrors:
   - mirrors:
-    - quay.io/huizenga/cs/cpopen
+    - quay.io/huizenga/bedrock/cpopen
     source: icr.io/cpopen
   - mirrors:
-    - quay.io/huizenga/cs/opencloudio
+    - quay.io/huizenga/bedrock/opencloudio
     source: quay.io/opencloudio
