@@ -1,0 +1,125 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ibm-bigsql-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: ibm-bigsql-case-7.4.0-linux-amd64
+  publisher: IBM
+  image: icr.io/cpopen/ibm-cpd-bigsql-operator-catalog@sha256:dcc01e676283c19ed54f87bcb8c3bc9a6923e44f97968b7bccb783aa80dcade9
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ibm-cpd-datastage-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: ibm-datastage-enterprise-4.6.0-linux-amd64
+  publisher: IBM
+  image: icr.io/cpopen/ds-ent-operator-catalog@sha256:dea3289b2b4d73850712e9c6b072d23791c442e93010bb93709878c38543f144
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ibm-cpd-iis-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: ibm-iis-4.5.1-linux-amd64
+  publisher: IBM
+  image: icr.io/cpopen/ibm-cpd-iis-operator-catalog@sha256:eb423369613141312aa1cacad55dbe0b61af694342b5a2da3dbdfe065e64b9e4
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ibm-dv-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: ibm-dv-case-1.9.0-linux-amd64
+  publisher: IBM
+  image: icr.io/cpopen/ibm-cpd-dv-operator-catalog@sha256:55ac2aac14ed0dbf2e47e23bd55e43fee4c3d36d6490d4bee71f963010498cc4
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ibm-elasticsearch-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: ibm-elasticsearch-operator-1.1.1080-linux-amd64
+  publisher: IBM
+  image: icr.io/cpopen/opencontent-elasticsearch-operator-catalog@sha256:ea3cd4ee38e1577220312fb0399c3957c2a9e1846ee76611e3eb4233621b7ba6
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ibm-fdb-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: ibm-fdb-1.1.13-linux-amd64
+  publisher: IBM
+  image: icr.io/cpopen/fdb-operator-catalog@sha256:435c5f759045e76f640826f4418afd814f1271f6dc0dd41845ba952079a745b5
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ibm-mdm-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: ibm-mdm-1.2.9-linux-amd64
+  publisher: IBM
+  image: icr.io/cpopen/mdm-operator-catalog@sha256:510b02021362edfa8f54806453d358a54406479c206bfd31513ebfafc46d96e2
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: ibm-rabbitmq-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: ibm-rabbitmq-operator-1.0.19-linux-amd64
+  publisher: IBM
+  image: icr.io/cpopen/opencontent-rabbitmq-operator-catalog@sha256:556c568c2fa35412b230e095f06b3545ac523f0c47074727a4fef8ebb58aecbf
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: mantaflow-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: mantaflow-1.3.8-linux-amd64
+  publisher: IBM
+  image: icr.io/cpopen/manta-adl-operator-catalog@sha256:8d616eb6ef3f20c8441c71cac22431e7ff9f0d35f5332fb74d74d392418cc219
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s

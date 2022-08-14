@@ -1,12 +1,18 @@
 apiVersion: operator.openshift.io/v1alpha1
 kind: ImageContentSourcePolicy
 metadata:
-  name: ibm-cp-common-services
+  name: ibm-cp-datacore
 spec:
   repositoryDigestMirrors:
   - mirrors:
+    - icr.io/cp
+    source: cp.icr.io/cp
+  - mirrors:
     - icr.io/cpopen
     source: icr.io/cpopen
+  - mirrors:
+    - icr.io/db2u
+    source: icr.io/db2u
   - mirrors:
     - icr.io/opencloudio
     source: quay.io/opencloudio
