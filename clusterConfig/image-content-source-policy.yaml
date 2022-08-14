@@ -1,9 +1,15 @@
 apiVersion: operator.openshift.io/v1alpha1
 kind: ImageContentSourcePolicy
 metadata:
-  name: ibm-cp-common-services
+  name: ibm-integration-platform-navigator
 spec:
   repositoryDigestMirrors:
+  - mirrors:
+    - icr.io/cp
+    source: cp.icr.io/cp
+  - mirrors:
+    - icr.io/ibmcom
+    source: docker.io/ibmcom
   - mirrors:
     - icr.io/cpopen
     source: icr.io/cpopen

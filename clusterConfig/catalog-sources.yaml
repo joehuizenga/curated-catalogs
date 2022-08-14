@@ -1,12 +1,26 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: CatalogSource
 metadata:
+  name: ibm-integration-platform-navigator-catalog
+  namespace: openshift-marketplace
+spec:
+  displayName: ibm-integration-platform-navigator-1.7.0
+  publisher: IBM
+  image: icr.io/cpopen/ibm-integration-platform-navigator-catalog@sha256:5be84a8103c894abebd4836cba7be54152788d373b82a7a2e83497a32c5d6574
+  sourceType: grpc
+  updateStrategy:
+    registryPoll:
+      interval: 30m0s
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
   name: opencloud-operators
   namespace: openshift-marketplace
 spec:
-  displayName: ibm-cp-common-services-1.16.0
+  displayName: ibm-cp-common-services-1.15.3
   publisher: IBM
-  image: icr.io/cpopen/ibm-common-service-catalog@sha256:38df78b4e23b22d7fa2b24eac693c45a1bc66c6f94b5ea5cffe11a5f41620927
+  image: icr.io/cpopen/ibm-common-service-catalog@sha256:c8d461f5d9f933cbae94e84dd28643f0874a58a04d56de23181610c65c473314
   sourceType: grpc
   updateStrategy:
     registryPoll:
