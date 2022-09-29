@@ -6,7 +6,7 @@ metadata:
 spec:
   displayName: ibm-cp-common-services-1.17.0
   publisher: IBM
-  image: icr.io/cpopen/ibm-common-service-catalog@sha256:da04da86e347a9ecfdd0fadbf4a6f25057bac15377d2e9dd6a83227ebc545ab1
+  image: icr.io/cpopen/ibm-common-service-catalog:latest
   sourceType: grpc
   updateStrategy:
     registryPoll:
